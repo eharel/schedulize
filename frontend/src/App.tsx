@@ -1,11 +1,16 @@
 // src/App.tsx
-import AppLayout from "./components/layout/AppLayout";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router";
+import { ThemeProvider } from "./context/Theme/ThemeProvider";
+import { UserProvider } from "./context/User/UserProvider";
 
 function App() {
   return (
-    <AppLayout>
-      <p>This is the main content area.</p>
-    </AppLayout>
+    <ThemeProvider>
+      <UserProvider>
+        <RouterProvider router={router} />
+      </UserProvider>
+    </ThemeProvider>
   );
 }
 
