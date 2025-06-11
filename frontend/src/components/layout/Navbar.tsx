@@ -1,6 +1,6 @@
-import Logo from "../Logo";
-import ToggleTheme from "../ToggleTheme";
-import UserIcon from "../UserIcon.tsx";
+import Logo from "../shared/Logo";
+import ToggleTheme from "../shared/ToggleTheme";
+import UserIcon from "../shared/UserIcon";
 import { useUser } from "../../context/User/useUser";
 import Button from "../ui/Button";
 
