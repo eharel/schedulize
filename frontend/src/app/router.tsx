@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "./pages/Home";
-import AppLayout from "./components/layout/AppLayout";
+import Home from "../pages/Home";
+import AppLayout from "../components/layout/AppLayout";
 import { Outlet } from "react-router-dom";
-import NotFound from "./pages/NotFound";
-import Schedule from "./pages/Schedule";
-import Login from "./pages/Login";
-import Constraints from "./pages/Constraints";
-import CalendarPage from "./pages/CalendarPage";
+import NotFound from "../pages/NotFound";
+import Login from "../pages/Login";
+import Constraints from "../pages/Constraints";
+import CalendarPage from "../pages/Calendar";
+import SchedulePage from "../pages/Schedule";
 
 export const router = createBrowserRouter([
   {
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "schedule",
-        element: <Schedule />,
+        element: <SchedulePage />,
       },
       {
         path: "constraints",
