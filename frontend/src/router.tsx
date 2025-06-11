@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound";
 import Schedule from "./pages/Schedule";
 import Login from "./pages/Login";
 import Constraints from "./pages/Constraints";
+import CalendarPage from "./pages/CalendarPage";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: "constraints",
         element: <Constraints />,
+      },
+      {
+        path: "calendar",
+        element: <CalendarPage />,
       },
     ],
   },
